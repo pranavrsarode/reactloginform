@@ -8,9 +8,11 @@ function App() {
   return (
     <div className="main-content">
       <Header />
-      <FormInputRow nameId="username" label="Username" />
-      <FormInputRow nameId="password" label="Password" />
-      <FormRowSubmitBtn />
+      <div className='form-content'>
+        <FormInputRow nameId="username" label="Username" inputType="text"/>
+        <FormInputRow nameId="password" label="Password" inputType="password"/>
+        <FormRowSubmitBtn />
+      </div>
     </div>
   );
 }
