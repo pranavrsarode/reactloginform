@@ -12,6 +12,7 @@ function App() {
         <FormInputRow nameId="username" label="Username" inputType="text"/>
         <FormInputRow nameId="password" label="Password" inputType="password"/>
         <FormRowSubmitBtn />
+        <Forget />
       </div>
     </div>
   );
