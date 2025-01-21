@@ -10,8 +10,8 @@ class FormRowSubmitBtn extends Component {
     render() {
         
         return <>
-            <div class="form-row">
-                <div class="submit-btn" onClick={this.onLoginSubmit}>
+            <div className="form-row">
+                <div className="submit-btn" onClick={this.onLoginSubmit}>
                     Submit 
                 </div>
             </div>
