@@ -1,20 +1,25 @@
 import './App.css';
-import FormInputRow from './components/form-input-row';
-import FormRowSubmitBtn from './components/form-row-submit-btn';
-import Header from './components/header';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import './css/Style.css';
+import LoginForm from './components/login-form';
+import ForgetPassword from './components/forgot-password';
 
 function App() {
   return (
-    <div className="main-content">
-      <Header />
-      <div className='form-content'>
-        <FormInputRow nameId="username" label="Username" inputType="text"/>
-        <FormInputRow nameId="password" label="Password" inputType="password"/>
-        <FormRowSubmitBtn />
-        <Forget />
-      </div>
-    </div>
+
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<LoginForm />} />
+          <Route path="/forget" element={<ForgetPassword />} />
+        </Routes>
+      </Router>
+      
+    </>
   );
 }
 

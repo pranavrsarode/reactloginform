@@ -1,25 +1,17 @@
-import React from "react";
-import ForgetPage from "../ForgetPasswrod/Forgotpass"
-import {Link,useParams,  useRouteMatch,Route, Switch, BrowserRouter} from 'react-router-dom';
-
-class Forget extends React.Component{
-
-    render(){
-        return(
-            <div>
-
-        <BrowserRouter>
-        {" "} <Link to="/forgetPassword"  className="forget">Forgot password?</Link>
-        <Switch>
-          <Route  path="/forgetPassword" exact strict component={(ForgetPage)} />
-        </Switch>
-        </BrowserRouter>
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 
-        </div>);
+class ForgetPassword extends Component {
+
+  render() {
+    return (
+      <div>
+        <h1>Forget Password</h1>
+        <Link to="/">Login</Link>
+      </div>);
+  }
 
 }
 
-}
-
-export default Forget;
+export default ForgetPassword;
