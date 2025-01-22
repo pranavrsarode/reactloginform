@@ -16,6 +16,7 @@ class LoginForm extends Component {
                     <FormInputRow nameId="password" label="Password" inputType="password" />
                     <FormRowSubmitBtn />
                     <Link to="/forget">Forget Password</Link>
+                    <Link to="/registration">Registration</Link>
                 </div>
             </div>
         </>;

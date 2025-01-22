@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 
-class ForgetPassword extends Component {
+class Welcome extends Component {
 
   render() {
     return (
       <div>
-        <h1>Forget Password</h1>
+        <h1>Welcome</h1>
         
-        <Link to="/">Login</Link>
+        <Link to="/">Logout</Link>
       </div>);
   }
 
 }
 
-export default ForgetPassword;
+export default Welcome;
