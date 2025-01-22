@@ -10,7 +10,7 @@ class LoginForm extends Component {
 
         return <>
             <div className="main-content">
-                <Header />
+                <h1>Login Form</h1>
                 <div className='form-content'>
                     <FormInputRow nameId="username" label="Username" inputType="text" />
                     <FormInputRow nameId="password" label="Password" inputType="password" />
