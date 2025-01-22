@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import FormInputRow from "./form-input-row";
 import FormRowSubmitBtn from "./form-row-submit-btn";
+import FormLinkRow from "./form-link-row";
 
 class ForgetPassword extends Component {
 
@@ -14,7 +14,7 @@ class ForgetPassword extends Component {
           <FormInputRow nameId="email" label="Email" inputType="text" />
           <FormInputRow nameId="newpassword" label="New Password" inputType="password" />
           <FormRowSubmitBtn />
-          <Link to="/">Login</Link>
+          <FormLinkRow registration="true" login="true" logout="false" forgetPass="fasle"/>
         </div>
       </div>);
   }

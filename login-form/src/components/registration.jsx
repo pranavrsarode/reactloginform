@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import FormInputRow from "./form-input-row";
 import FormRowSubmitBtn from "./form-row-submit-btn";
+import FormLinkRow from "./form-link-row";
 class Registration extends Component {
 
   render() {
@@ -17,8 +17,8 @@ class Registration extends Component {
           <FormInputRow nameId="password" label="Password" inputType="password" />
 
           <FormRowSubmitBtn />
+          <FormLinkRow registration="false" login="true" logout="false" forgetPass="false"/>
         </div>
-        <Link to="/">Login</Link>
       </div>);
   }
 

@@ -47,6 +47,12 @@ h1{
     margin: auto;
 }
 
+.form-row-link {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
 @media only screen and (max-width: 500px) {
     .main-content{
         width: 300px;

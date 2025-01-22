@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
+import FormLinkRow from "./form-link-row";
 
 
 class Welcome extends Component {
@@ -9,8 +10,7 @@ class Welcome extends Component {
       <div className="main-content">
         <h1>Welcome</h1>
         <div className='form-content'>
-
-          <Link to="/">Logout</Link>
+          <FormLinkRow registration="false" login="false" logout="true" forgetPass="false" />
         </div>
       </div>);
   }
