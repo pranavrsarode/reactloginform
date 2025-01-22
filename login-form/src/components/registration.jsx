@@ -4,7 +4,9 @@ import FormInputRow from "./form-input-row";
 import FormRowSubmitBtn from "./form-row-submit-btn";
 import FormLinkRow from "./form-link-row";
 class Registration extends Component {
-
+  onRegistrationSubmit() {
+    alert('Registration Submit');
+  }
   render() {
     return (
       <div className="main-content">
@@ -16,7 +18,8 @@ class Registration extends Component {
           <FormInputRow nameId="username" label="Username" inputType="text" />
           <FormInputRow nameId="password" label="Password" inputType="password" />
 
-          <FormRowSubmitBtn />
+          <FormRowSubmitBtn onClickHandler={this.onRegistrationSubmit()}/>
+
           <FormLinkRow registration="false" login="true" logout="false" forgetPass="false"/>
         </div>
       </div>);
