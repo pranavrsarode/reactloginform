@@ -7,16 +7,17 @@ class Registration extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main-content">
         <h1>Registration</h1>
-        <FormInputRow nameId="name" label="Name" inputType="text" />
-        <FormInputRow nameId="email" label="Email" inputType="text" />
-        
-        <FormInputRow nameId="username" label="Username" inputType="text" />
-        <FormInputRow nameId="password" label="Password" inputType="password" />
+        <div className='form-content'>
+          <FormInputRow nameId="name" label="Name" inputType="text" />
+          <FormInputRow nameId="email" label="Email" inputType="text" />
 
-        <FormRowSubmitBtn />
+          <FormInputRow nameId="username" label="Username" inputType="text" />
+          <FormInputRow nameId="password" label="Password" inputType="password" />
 
+          <FormRowSubmitBtn />
+        </div>
         <Link to="/">Login</Link>
       </div>);
   }

@@ -6,10 +6,12 @@ class Welcome extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main-content">
         <h1>Welcome</h1>
-        
-        <Link to="/">Logout</Link>
+        <div className='form-content'>
+
+          <Link to="/">Logout</Link>
+        </div>
       </div>);
   }
 
