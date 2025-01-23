@@ -11,7 +11,7 @@ class FormRowSubmitBtn extends Component {
         
         return <>
             <div className="form-row">
-                <div className="submit-btn" onClick={this.onLoginSubmit}>
+            <div className="submit-btn" onClick={() => this.props.onClickHandler}>
                     Submit 
                 </div>
             </div>
